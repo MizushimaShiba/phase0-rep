@@ -1,0 +1,6 @@
+SET force
+SET mass = 600
+SET velocity = 2
+
+force = mass * velocity
+

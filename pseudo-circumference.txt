@@ -1,0 +1,6 @@
+SET pi = 3.14
+SET round = 22
+SET formula
+
+formula = 2*pi*round
+
