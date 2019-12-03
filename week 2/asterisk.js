@@ -1,18 +1,13 @@
 function asterisk(num) {
   let mole = ''
-  for (let i = 0; i < num; i++) {
-    for (let j = 0; j < num; j++ ) {
+  for (let i = 1; i <= num; i++) {
+    for (let j = 1; j <= i; j++) {
       mole += '*'
-    }
-    for (let j = num; j > 0; j--) {
-      mole += ''
-      console.log(mole);
-      
     }
     mole += '\n'
   }
   return mole
-  
+
 }
 
 console.log(asterisk(5));
