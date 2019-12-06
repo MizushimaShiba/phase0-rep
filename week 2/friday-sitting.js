@@ -1,11 +1,22 @@
 function sittingArrangement(person, column) {
   // Write your code here
+  let result  = []
 
-  for (let i = 0; i < person.length; i++)
-  {
-    for (let j = 0; j < )
+  if (column == 0) {
+    return `Invalid number`
   }
 
+  for (let i = 0; i < Math.ceil(person.length/column); i++)
+  {
+    let bangku = []
+    for (let j = 0; j < column; j++)
+    {
+      bangku.push(person[(column*i)+j])
+    }
+    result.push(bangku)
+  }
+
+  return result
 }
 
 //DRIVER CODE
