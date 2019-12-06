@@ -1,8 +1,13 @@
-let str = '123adad45'
+let value = 0
+if (value === 0) {
+  console.log(`invalid data`)
+  break
+}
 
-let num = 12345
-
-
-console.log(parseInt(str));
-console.log(String(num));
-
+if(typeof value === 'number' ) {
+  console.log(`age ${value}`)
+} else if (typeof value === 'string') {
+  console.log(`username ${value}`)
+} else if (typeof value === 'boolean') {
+  console.log(value ? 'thank you for agreeing' : 'cannot proceed without agreement')
+}
